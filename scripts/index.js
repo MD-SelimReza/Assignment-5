@@ -2,13 +2,20 @@ let totalPrice = parseInt(document.getElementById('totalPrice').innerText);
 let ticketCount = parseInt(document.getElementById('ticketCount').innerText);
 let totalSeat = parseInt(document.getElementById('totalSeat').innerText);
 
+const btnApply = document.getElementById('btn-apply');
 const seatBooked = [];
 
-const allSeat = document.querySelectorAll('.seatNo');
+let count = 0;
 
+const allSeat = document.querySelectorAll('.seatNo');
 for (const seat of allSeat) {
     seat.addEventListener('click', function (e) {
         const seatTitle = seat.innerText;
+        if (count >= 3) {
+            btnApply.removeAttribute('disabled');
+            couponCode.removeAttribute('disabled');
+        };
+        count++;
 
         if (seatBooked.includes(seatTitle)) {
             alert`Already booked this ticket.`;
@@ -42,60 +49,45 @@ for (const seat of allSeat) {
                 setInnerText('grandTotal', totalPrice);
                 setInnerText('ticketCount', ticketCount);
                 setInnerText('totalSeat', totalSeat);
-            }
+            };
 
-        }
+        };
         seatBooked.push(seatTitle);
-    })
-}
+    });
+};
 
 
-
-const btnApply = document.getElementById('btn-apply');
 const couponCode = document.getElementById('coupon-code');
 const couponBox = document.getElementById('coupon-box');
 
+function discountedPriseCalculate(discountPercentage) {
+    couponBox.style.display = 'none';
+    const discount = totalPrice * discountPercentage;
 
-if (seatBooked.length > 3) {
+    const discountBox = document.getElementById('discount-box');
+    const p1 = document.createElement('p');
+    const p2 = document.createElement('p');
+    p1.innerText = 'Discount';
+    p2.innerText = `BDT ${discount}`;
+    discountBox.appendChild(p1);
+    discountBox.appendChild(p2);
 
-    btnApply.removeAttribute('disabled', true);
-
-    btnApply.addEventListener('click', function (e) {
-        if (textValue === 'NEW15') {
-            couponBox.style.display = 'none';
-            const discount = totalPrice * 0.15;
-
-            const discountBox = document.getElementById('discount-box');
-            const p1 = document.createElement('p');
-            const p2 = document.createElement('p');
-            p1.innerText = 'Discount';
-            p2.innerText = `BDT ${discount}`;
-            discountBox.appendChild(p1);
-            discountBox.appendChild(p2);
-
-            const grandTotal = totalPrice - discount;
-            setInnerText('grandTotal', grandTotal);
-        } else if (textValue === 'Couple 20') {
-            couponBox.style.display = 'none';
-            const discount = totalPrice * 0.2;
-
-            const discountBox = document.getElementById('discount-box');
-            const p1 = document.createElement('p');
-            const p2 = document.createElement('p');
-            p1.innerText = 'Discount';
-            p2.innerText = `BDT ${discount}`;
-            discountBox.appendChild(p1);
-            discountBox.appendChild(p2);
-
-            const grandTotal = totalPrice - discount;
-            setInnerText('grandTotal', grandTotal);
-        } else {
-            alert`Invalid coupon`;
-            couponCode.value = '';
-        }
-    })
+    const grandTotal = totalPrice - discount;
+    setInnerText('grandTotal', grandTotal);
 }
 
+couponCode.addEventListener('keyup', function (e) {
+    const textValue = e.target.value;
+    if (textValue === 'NEW15') {
+        btnApply.addEventListener('click', function () {
+            discountedPriseCalculate(0.15);
+        });
+    } else if (textValue === 'Couple 20') {
+        btnApply.addEventListener('click', function () {
+            discountedPriseCalculate(0.2);
+        });
+    };
+});
 
 
 const name = document.getElementById('name');
