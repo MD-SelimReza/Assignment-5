@@ -49,7 +49,7 @@
   </head>
 
   <body class="w-full max-w-[1440px]">
-    <header class="lg:px-16 mt-8 mb-28">
+    <header class="lg:px-16 px-2 mt-4 mb-10 lg:mt-8 lg:mb-28">
       <!-- navbar section -->
       <nav>
         <div class="navbar bg-base-100 flex">
@@ -81,7 +81,9 @@
                 <li><a href="#">Search</a></li>
               </ul>
             </div>
-            <a class="text-black-color text-4xl raleway font-extrabold">
+            <a
+              class="text-black-color text-2xl lg:text-4xl raleway font-extrabold"
+            >
               P-Ticket
             </a>
           </div>
@@ -97,9 +99,12 @@
           </div>
           <div class="navbar-end">
             <div
-              class="btn flex gap-2 w-32 text-center bg-[#1DD1001A] px-5 py-2 border border-green rounded-lg"
+              class="btn flex gap-2 text-center bg-[#1DD1001A] border border-green rounded-lg"
             >
-              <span class="text-green text-xl raleway font-bold">Bus</span>
+              <span
+                class="text-green text-lg lg:text-xl raleway font-medium lg:font-bold"
+                >Bus</span
+              >
               <img src="images/bus-icon.png" alt="bus-icon" class="size-6" />
             </div>
           </div>
@@ -113,11 +118,13 @@
         >
           <div class="hero-content text-center text-neutral-content">
             <div class="w-full space-y-4">
-              <h1 class="text-5xl space-y-4 raleway font-extrabold">
+              <h1
+                class="lg:text-5xl text-3xl space-y-2 lg:space-y-4 raleway font-bold lg:font-extrabold"
+              >
                 <p class="">End-to-End Travel with</p>
                 <p class="text-green">P Paribahan</p>
               </h1>
-              <p class="inter text-lg">
+              <p class="inter lg:text-lg">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
@@ -125,7 +132,7 @@
               <button class="">
                 <a
                   href="#infoContainer"
-                  class="btn border-none bg-green text-xl raleway font-bold"
+                  class="btn border-none bg-green text-lg lg:text-xl raleway font-bold"
                   >Buy Tickets</a
                 >
               </button>
@@ -136,53 +143,57 @@
     </header>
     <main>
       <!-- offer section -->
-      <section class="lg:px-16 mb-28">
+      <section class="lg:px-16 px-2 lg:mb-28 mb-10">
         <h3
-          class="raleway text-4xl font-bold text-black-color text-center mb-6"
+          class="raleway text-2xl lg:text-4xl lg:font-bold font-medium text-black-color text-center mb-6"
         >
           Best offers for you
         </h3>
-        <div class="flex flex-col lg:flex-row justify-center gap-5">
+        <div class="flex flex-col lg:flex-row justify-center lg:gap-5 gap-3">
           <div class="bg-yellow flex justify-evenly items-center rounded-2xl">
             <div class="px-5">
-              <h1 class="inter text-4xl text-[#030712CC] font-black">
+              <h1
+                class="inter text-2xl lg:text-4xl text-[#030712CC] font-bold lg:font-black"
+              >
                 15% OFF
               </h1>
-              <h5 class="inter font-semibold text-xl text-[#030712CC]">
+              <h5 class="inter font-semibold lg:text-xl text-[#030712CC]">
                 on your next purchase
               </h5>
-              <p class="inter font-medium text-lg text-[#03071280]">
+              <p class="inter font-medium lg:text-lg text-[#03071280]">
                 use by January 2024
               </p>
             </div>
             <img src="images/cupon-devider.png" alt="" class="" />
             <div class="px-5">
-              <h3 class="raleway font-bold text-3xl">NEW15</h3>
-              <p class="raleway font-medium text-xl">Coupon Code</p>
+              <h3 class="raleway font-bold text-2xl lg:text-3xl">NEW15</h3>
+              <p class="raleway font-medium text-lg lg:text-xl">Coupon Code</p>
             </div>
           </div>
           <div class="bg-red flex justify-evenly items-center rounded-2xl">
             <div class="px-5">
-              <h1 class="inter text-4xl text-[#030712CC] font-black">
+              <h1
+                class="inter text-2xl lg:text-4xl text-[#030712CC] font-bold lg:font-black"
+              >
                 20% OFF
               </h1>
-              <h5 class="inter font-semibold text-xl text-[#030712CC]">
+              <h5 class="inter font-semibold lg:text-xl text-[#030712CC]">
                 on your next purchase
               </h5>
-              <p class="inter font-medium text-lg text-[#03071280]">
+              <p class="inter font-medium lg:text-lg text-[#03071280]">
                 use by January 2024
               </p>
             </div>
             <img src="images/cupon-devider.png" alt="" class="" />
             <div class="px-5">
-              <h3 class="raleway font-bold text-3xl">Couple 20</h3>
-              <p class="raleway font-medium text-xl">Coupon Code</p>
+              <h3 class="raleway font-bold text-2xl lg:text-3xl">Couple 20</h3>
+              <p class="raleway font-medium text-lg lg:text-xl">Coupon Code</p>
             </div>
           </div>
         </div>
         <div class="text-center my-10">
           <button
-            class="btn raleway text-xl font-bold py-2 px-5 border border-green"
+            class="btn raleway text-xl font-semibold lg:font-bold py-2 px-5 border border-green"
           >
             See All Offers
           </button>
@@ -192,53 +203,59 @@
       <!-- info section -->
       <section
         id="infoContainer"
-        class="bg-[#F7F8F8] lg:p-16 border-t-2 overflow-hidden border-green rounded-t-3xl"
+        class="bg-[#F7F8F8] lg:px-16 lg:py-16 px-3 py-6 border-t-2 overflow-hidden border-green rounded-t-3xl"
       >
         <div class="text-center space-y-3 mb-10">
-          <h1 class="raleway text-4xl font-bold">P.H Paribahan</h1>
+          <h1 class="raleway text-2xl lg:text-4xl font-semibold lg:font-bold">
+            P.H Paribahan
+          </h1>
           <p class="inter text-lg lg:w-[550px] mx-auto">
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </p>
         </div>
         <div
-          class="bg-white-color flex justify-evenly items-center px-6 rounded-2xl"
+          class="bg-white-color flex flex-col lg:flex-row justify-evenly items-center p-2 lg:py-0 lg:px-6 rounded-2xl"
         >
-          <div>
+          <div class="mb-3">
             <div class="flex justify-between mb-6">
               <div class="flex gap-2">
                 <div>
                   <img src="images/bus-logo.png" alt="bus-logo" />
                 </div>
                 <div>
-                  <h1 class="raleway text-3xl text-black-color font-bold">
+                  <h1
+                    class="raleway text-xl lg:text-3xl text-black-color font-medium lg:font-bold"
+                  >
                     Greenline Paribahan
                   </h1>
-                  <p class="inter text-lg text-[#03071299]">
+                  <p class="inter lg:text-lg text-[#03071299]">
                     Coach-009-WEB ! AC_Business
                   </p>
                 </div>
               </div>
               <div
-                class="flex gap-2 bg-[#1DD1001A] justify-center items-center px-5 rounded-xl inter text-lg font-medium text-green"
+                class="flex gap-2 bg-[#1DD1001A] justify-center items-center px-4 lg:px-5 rounded-xl inter lg:text-lg font-medium text-green"
               >
                 <div><img src="images/seat-green.png" alt="seat-green" /></div>
                 <p><span id="totalSeat">40</span> Seats left</p>
               </div>
             </div>
             <div class="bg-[#F7F8F8] p-5 rounded-2xl">
-              <div class="flex justify-between raleway text-lg font-semibold">
+              <div
+                class="flex justify-between raleway lg:text-lg font-semibold border-b border-dashed pb-2"
+              >
                 <p class="text-[#03071299]">Route</p>
                 <p class="text-black-color">Dhaka - Sylhet</p>
               </div>
-              <hr class="my-3" />
-              <div class="flex justify-between raleway text-lg font-semibold">
+              <div
+                class="flex justify-between raleway lg:text-lg font-semibold border-b border-dashed py-2"
+              >
                 <p class="text-[#03071299]">Departure Time</p>
                 <p class="text-black-color">9:00 PM</p>
               </div>
-              <hr class="my-3 mb-5" />
               <div
-                class="flex gap-6 justify-between inter text-lg font-medium text-center"
+                class="flex gap-2 mt-4 lg:gap-6 justify-between inter lg:text-lg font-medium text-center"
               >
                 <p class="bg-[#0307120D] p-2 w-full rounded-lg">
                   Boarding Point - Laxmipur
@@ -255,27 +272,35 @@
           <img
             src="images/info-devider.png"
             alt="info-devider"
-            class="lg:h-[380px]"
+            class="hidden lg:flex"
           />
           <div class="text-center space-y-2">
             <img src="images/fare.png" alt="fare" class="mx-auto" />
-            <p id="price" class="raleway text-3xl font-bold text-black-color">
+            <p
+              id="price"
+              class="raleway text-2xl lg:text-3xl font-semibold lg:font-bold text-black-color"
+            >
               550 Taka
             </p>
-            <p class="raleway text-2xl font-semibold text-[#03071299]">
+            <p
+              class="raleway text-xl lg:text-2xl font-semibold text-[#03071299]"
+            >
               Per Seat
             </p>
           </div>
         </div>
         <!-- select seat section -->
         <div class="bg-white-color rounded-2xl p-5 mt-6">
-          <div class="flex gap-20">
-            <div class="w-[65%]">
-              <h3 class="raleway text-2xl font-semibold text-black-color">
+          <div class="flex flex-col lg:flex-row">
+            <div class="lg:w-[65%] w-full border-r-2 border-dashed pr-10">
+              <h3
+                class="raleway text-2xl font-semibold text-black-color border-b border-dashed pb-3"
+              >
                 Select Your Seat
               </h3>
-              <hr class="my-3" />
-              <div class="flex justify-between items-center">
+              <div
+                class="flex justify-between items-center border-b border-dashed py-3"
+              >
                 <div class="flex justify-center items-center gap-2">
                   <img src="images/seat-gray.png" alt="seat-gray" />
                   <p class="inter text-lg font-medium text-[#03071280]">
@@ -290,9 +315,8 @@
                   <p class="inter text-lg font-medium text-green">Selected</p>
                 </div>
               </div>
-              <hr class="my-3" />
-              <div class="flex justify-end mb-6">
-                <div class="bg-[#0307121A] w-24 px-5 py-2 rounded-lg">
+              <div class="flex justify-end my-4">
+                <div class="bg-[#0307121A] lg:w-24 px-5 py-2 rounded-lg">
                   <img src="images/wheel.png" alt="wheel" class="mx-auto" />
                 </div>
               </div>
@@ -303,49 +327,249 @@
                   <div class="w-10">A</div>
                   <div class="flex-1 flex justify-between">
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
                       A1
                     </div>
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
                       A2
                     </div>
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
                       A3
                     </div>
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
                       A4
                     </div>
                   </div>
                 </div>
-                <div class="flex justify-between items-center">
-                  <div class="w-10">B</div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
                   <div class="flex-1 flex justify-between">
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
-                      B1
+                      A1
                     </div>
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
-                      B2
+                      A2
                     </div>
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
-                      B3
+                      A3
                     </div>
                     <div
-                      class="seatNo bg-[#F7F8F8] w-24 px-5 py-2 text-center rounded-lg"
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
                     >
-                      B4
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div class="w-10">A</div>
+                  <div class="flex-1 flex justify-between">
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A1
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A2
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A3
+                    </div>
+                    <div
+                      class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
+                    >
+                      A4
                     </div>
                   </div>
                 </div>
@@ -353,14 +577,15 @@
             </div>
 
             <!-- select seat section -->
-            <div class="w-[35%]">
-              <h3 class="raleway text-2xl font-semibold text-black-color">
+            <div class="lg:w-[35%] w-full pl-10">
+              <h3
+                class="raleway text-2xl font-semibold text-black-color border-b border-dashed pb-3"
+              >
                 Select Your Seat
               </h3>
-              <hr class="my-3" />
-              <div class="bg-[#F7F8F8] p-5 rounded-lg">
+              <div class="bg-[#F7F8F8] p-5 rounded-lg mt-4">
                 <div
-                  class="flex justify-between inter text-lg font-medium text-black-color"
+                  class="flex justify-between inter text-lg font-medium text-black-color border-b border-dashed pb-3"
                 >
                   <p>
                     Seat
@@ -373,8 +598,7 @@
                   <p>Class</p>
                   <p>Price</p>
                 </div>
-                <hr class="my-3" />
-                <div id="seatInfo" class="flex justify-between">
+                <div id="seatInfo" class="flex justify-between pt-3">
                   <div id="seatName"></div>
                   <div id="seatClass"></div>
                   <div id="seatPrice"></div>
@@ -389,10 +613,7 @@
                 <div
                   id="discount-box"
                   class="flex justify-between inter text-lg font-medium text-black-color mb-3"
-                >
-                  <!-- <p>Total Price</p>
-                  <p>BDT <span id="totalPrice">0</span></p> -->
-                </div>
+                ></div>
                 <div id="coupon-box" class="bg-white-color p-2 rounded-lg">
                   <div class="flex gap-1 justify-center items-center">
                     <input
@@ -406,7 +627,7 @@
                     <button
                       id="btn-apply"
                       disabled
-                      class="btn bg-green px-5 py-1 rounded-lg text-white"
+                      class="btn bg-green px-5 rounded-lg text-white"
                     >
                       Apply
                     </button>
@@ -469,6 +690,7 @@
                   />
                 </div>
                 <button
+                  id="next-btn"
                   class="btn w-full bg-green px-5 py-1 rounded-lg text-white"
                 >
                   Next
@@ -515,9 +737,11 @@
           </div>
         </nav>
       </footer>
-      <div class="flex justify-between inter text-sm py-10 text-[#FFFFFFCC]">
+      <div
+        class="flex flex-col lg:flex-row gap-4 justify-between inter text-sm pt-6 lg:py-10 text-[#FFFFFFCC] text-center"
+      >
         <p>@all rights reserved, P-Ticket services limited.2024</p>
-        <div class="flex gap-10">
+        <div class="flex flex-col lg:flex-row gap-3 lg:gap-10">
           <p>Terms & condition</p>
           <p>Return & refund policy</p>
           <p>Privacy policy</p>

@@ -50,50 +50,65 @@ for (const seat of allSeat) {
 }
 
 
+
 const btnApply = document.getElementById('btn-apply');
 const couponCode = document.getElementById('coupon-code');
 const couponBox = document.getElementById('coupon-box');
 
-couponCode.addEventListener('keyup', function (e) {
-    const textValue = e.target.value;
-    if (textValue === 'NEW15' || textValue === 'Couple 20') {
 
-        btnApply.removeAttribute('disabled');
+if (seatBooked.length > 3) {
 
-        btnApply.addEventListener('click', function (e) {
-            if (textValue === 'NEW15') {
-                couponBox.style.display = 'none';
-                const discount = totalPrice * 0.15;
+    btnApply.removeAttribute('disabled', true);
 
-                const discountBox = document.getElementById('discount-box');
-                const p1 = document.createElement('p');
-                const p2 = document.createElement('p');
-                p1.innerText = 'Discount';
-                p2.innerText = `BDT ${discount}`;
-                discountBox.appendChild(p1);
-                discountBox.appendChild(p2);
+    btnApply.addEventListener('click', function (e) {
+        if (textValue === 'NEW15') {
+            couponBox.style.display = 'none';
+            const discount = totalPrice * 0.15;
 
-                const grandTotal = totalPrice - discount;
-                setInnerText('grandTotal', grandTotal);
-            } else {
-                couponBox.style.display = 'none';
-                const discount = totalPrice * 0.2;
+            const discountBox = document.getElementById('discount-box');
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            p1.innerText = 'Discount';
+            p2.innerText = `BDT ${discount}`;
+            discountBox.appendChild(p1);
+            discountBox.appendChild(p2);
 
-                const discountBox = document.getElementById('discount-box');
-                const p1 = document.createElement('p');
-                const p2 = document.createElement('p');
-                p1.innerText = 'Discount';
-                p2.innerText = `BDT ${discount}`;
-                discountBox.appendChild(p1);
-                discountBox.appendChild(p2);
+            const grandTotal = totalPrice - discount;
+            setInnerText('grandTotal', grandTotal);
+        } else if (textValue === 'Couple 20') {
+            couponBox.style.display = 'none';
+            const discount = totalPrice * 0.2;
 
-                const grandTotal = totalPrice - discount;
-                setInnerText('grandTotal', grandTotal);
-            }
-        })
-    }
-});
+            const discountBox = document.getElementById('discount-box');
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            p1.innerText = 'Discount';
+            p2.innerText = `BDT ${discount}`;
+            discountBox.appendChild(p1);
+            discountBox.appendChild(p2);
+
+            const grandTotal = totalPrice - discount;
+            setInnerText('grandTotal', grandTotal);
+        } else {
+            alert`Invalid coupon`;
+            couponCode.value = '';
+        }
+    })
+}
+
+
+
+const name = document.getElementById('name');
+const phone = document.getElementById('phone');
+const nextBtn = document.getElementById('next-btn');
+
+nextBtn.addEventListener('click', function () {
+
+})
+
 
 function setInnerText(displayId, value) {
     document.getElementById(displayId).innerText = value;
 }
+
+
