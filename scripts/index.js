@@ -3,24 +3,37 @@ let ticketCount = parseInt(document.getElementById('ticketCount').innerText);
 let totalSeat = parseInt(document.getElementById('totalSeat').innerText);
 
 const btnApply = document.getElementById('btn-apply');
-const seatBooked = [];
+const phone = document.getElementById('phone');
+const nextBtn = document.getElementById('next-btn');
+
+phone.addEventListener('keyup', function (e) {
+    const phone = e.target.value.length;
+    if (phone >= 7 && phone <= 11 && ticketCount >= 1) {
+        nextBtn.removeAttribute('disabled');
+    } else {
+        nextBtn.setAttribute('disabled', true);
+    }
+})
 
 let count = 0;
 
+const seatBooked = [];
 const allSeat = document.querySelectorAll('.seatNo');
 for (const seat of allSeat) {
     seat.addEventListener('click', function (e) {
         const seatTitle = seat.innerText;
-        if (count >= 3) {
+
+        if (ticketCount >= 3) {
             btnApply.removeAttribute('disabled');
             couponCode.removeAttribute('disabled');
         };
-        count++;
 
         if (seatBooked.includes(seatTitle)) {
             alert`Already booked this ticket.`;
         } else {
-            if (seatBooked.length >= 4) {
+            seatBooked.push(seatTitle);
+
+            if (seatBooked.length > 4) {
                 alert`You buy no ticket any more.`;
             } else {
                 e.target.style.backgroundColor = '#1DD100';
@@ -52,7 +65,7 @@ for (const seat of allSeat) {
             };
 
         };
-        seatBooked.push(seatTitle);
+        // seatBooked.push(seatTitle);
     });
 };
 
@@ -76,23 +89,20 @@ function discountedPriseCalculate(discountPercentage) {
     setInnerText('grandTotal', grandTotal);
 }
 
-couponCode.addEventListener('keyup', function (e) {
-    const textValue = e.target.value;
+btnApply.addEventListener('click', function () {
+    const textValue = couponCode.value;
     if (textValue === 'NEW15') {
-        btnApply.addEventListener('click', function () {
-            discountedPriseCalculate(0.15);
-        });
+        discountedPriseCalculate(0.15);
     } else if (textValue === 'Couple 20') {
-        btnApply.addEventListener('click', function () {
-            discountedPriseCalculate(0.2);
-        });
-    };
+        discountedPriseCalculate(0.2);
+    } else {
+        alert`Invalid coupon`;
+        document.getElementById('coupon-code').value = '';
+    }
 });
 
 
 const name = document.getElementById('name');
-const phone = document.getElementById('phone');
-const nextBtn = document.getElementById('next-btn');
 
 nextBtn.addEventListener('click', function () {
 
