@@ -52,7 +52,7 @@
   </head>
 
   <body class="w-full max-w-[1440px]">
-    <header class="lg:px-16 px-2 mt-4 mb-10 lg:mt-8 lg:mb-28">
+    <header class="lg:px-16 px-2 mt-4 lg:my-8">
       <!-- navbar section -->
       <nav>
         <div class="navbar bg-base-100 flex">
@@ -125,7 +125,9 @@
                 class="text-center mx-auto"
               />
             </div>
-            <h3 class="roboto font-bold text-2xl text-[#27AE60] uppercase mb-3">
+            <h3
+              class="roboto font-bold text-2xl text-[#27AE60] uppercase lg:mt-0 mt-2 mb-3"
+            >
               Success
             </h3>
             <p class="roboto text-xl font-medium text-[#4A4A4A]">
@@ -140,7 +142,7 @@
                 <!-- if there is a button in form, it will close the modal -->
                 <button
                   onclick="goHome()"
-                  class="btn roboto text-xl font-semibold text-white-color bg-[#27AE60] rounded-3xl mb-4 px-16 py-2"
+                  class="btn roboto text-xl font-semibold text-white-color bg-[#27AE60] rounded-3xl lg:mb-4 px-16 py-2"
                 >
                   Continue
                 </button>
@@ -175,6 +177,57 @@
                   >Buy Tickets</a
                 >
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- outer div section -->
+      <section
+        class="lg:flex lg:space-y-0 space-y-6 lg:mt-0 my-10 justify-center gap-4 items-center lg:-translate-y-12"
+      >
+        <div
+          class="bg-white-color shadow-xl flex justify-center rounded-2xl border-[#1DD100] border-b-4"
+        >
+          <div class="flex gap-5 p-4 lg:gap-2">
+            <div>
+              <img src="images/people.png" alt="people" />
+            </div>
+            <div class="inter">
+              <h2 class="text-2xl lg:text-4xl font-bold text-black-color">
+                500K+
+              </h2>
+              <p class="text-lg text-[#03071299]">Registered users</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white-color shadow-xl flex justify-center rounded-2xl border-[#1DD100] border-b-4"
+        >
+          <div class="flex gap-5 p-4 lg:gap-2 rounded-2xl">
+            <div>
+              <img src="images/ticket-cupon.png" alt="people" />
+            </div>
+            <div class="inter">
+              <h2 class="text-2xl lg:text-4xl font-bold text-black-color">
+                1.7 lacks
+              </h2>
+              <p class="text-lg text-[#03071299]">Tickets sold</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white-color shadow-xl flex justify-center rounded-2xl border-[#1DD100] border-b-4"
+        >
+          <div class="flex gap-5 p-4 lg:gap-2">
+            <div>
+              <img src="images/stoppage.png" alt="stoppage" />
+            </div>
+            <div class="inter">
+              <h2 class="text-2xl lg:text-4xl font-bold text-black-color">
+                80K+
+              </h2>
+              <p class="text-lg text-[#03071299]">Rental partners</p>
             </div>
           </div>
         </div>
@@ -310,7 +363,7 @@
           </div>
           <img
             src="images/info-devider.png"
-            alt="info-devider"
+            alt="info-divider"
             class="hidden lg:flex"
           />
           <div class="text-center space-y-2">
@@ -365,7 +418,7 @@
               <!-- seat number -->
               <div class="inter text-lg font-medium text-[#03071280] space-y-4">
                 <div class="flex justify-center items-center">
-                  <div class="w-10">A</div>
+                  <div class="w-10 text-[#030712]">A</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -390,7 +443,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">B</div>
+                  <div class="w-10 text-[#030712]">B</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -415,7 +468,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">C</div>
+                  <div class="w-10 text-[#030712]">C</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -440,7 +493,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">D</div>
+                  <div class="w-10 text-[#030712]">D</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -465,7 +518,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">E</div>
+                  <div class="w-10 text-[#030712]">E</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -490,7 +543,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">F</div>
+                  <div class="w-10 text-[#030712]">F</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -515,7 +568,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">G</div>
+                  <div class="w-10 text-[#030712]">G</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -540,7 +593,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">H</div>
+                  <div class="w-10 text-[#030712]">H</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -565,7 +618,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">I</div>
+                  <div class="w-10 text-[#030712]">I</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-6 py-2 text-center rounded-lg"
@@ -590,7 +643,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <div class="w-10">J</div>
+                  <div class="w-10 text-[#030712]">J</div>
                   <div class="flex-1 flex justify-between">
                     <div
                       class="seatNo bg-[#F7F8F8] lg:w-24 px-5 py-2 text-center rounded-lg"
@@ -659,7 +712,7 @@
                   <div class="flex gap-1 justify-center items-center">
                     <input
                       type="text"
-                      name=""
+                      name="coupon-code"
                       id="coupon-code"
                       placeholder="Have any coupon?"
                       autocomplete="off"
@@ -692,7 +745,7 @@
                   <br />
                   <input
                     type="text"
-                    name=""
+                    name="name"
                     id="name"
                     placeholder="Enter your name"
                     autocomplete="off"
@@ -708,8 +761,9 @@
                   <br />
                   <input
                     type="tel"
-                    name=""
+                    name="phone"
                     id="phone"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{6}"
                     placeholder="Enter your phone number"
                     autocomplete="off"
                     class="border w-full py-2 px-3 rounded-lg"
@@ -786,9 +840,9 @@
       >
         <p>@all rights reserved, P-Ticket services limited.2024</p>
         <div class="flex flex-col lg:flex-row gap-3 lg:gap-10">
-          <p>Terms & condition</p>
-          <p>Return & refund policy</p>
-          <p>Privacy policy</p>
+          <p class="underline">Terms & condition</p>
+          <p class="underline">Return & refund policy</p>
+          <p class="underline">Privacy policy</p>
         </div>
       </div>
     </footer>

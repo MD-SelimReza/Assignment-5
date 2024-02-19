@@ -85,7 +85,7 @@ btnApply.addEventListener('click', function () {
     } else {
         alert`Invalid coupon`;
         document.getElementById('coupon-code').value = '';
-    }
+    };
 });
 
 const phone = document.getElementById('phone');
@@ -97,14 +97,14 @@ phone.addEventListener('keyup', function (e) {
         nextBtn.removeAttribute('disabled');
     } else {
         nextBtn.setAttribute('disabled', true);
-    }
-})
+    };
+});
 
 function setInnerText(displayId, value) {
     document.getElementById(displayId).innerText = value;
-}
+};
 
 function goHome() {
     location.reload();
-}
+};
 
