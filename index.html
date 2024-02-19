@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700&display=swap&display=swap"
       rel="stylesheet"
     />
     <!-- tailwind custom classes -->
@@ -44,6 +44,9 @@
       }
       .inter {
         font-family: "Inter", sans-serif;
+      }
+      .roboto {
+        font-family: "roboto", sans-serif;
       }
     </style>
   </head>
@@ -110,6 +113,42 @@
           </div>
         </div>
       </nav>
+
+      <!-- Modal -->
+      <section>
+        <dialog id="modal" class="modal modal-middle">
+          <div class="modal-box text-center">
+            <div class="w-full lg:my-6">
+              <img
+                src="images/success.png"
+                alt=""
+                class="text-center mx-auto"
+              />
+            </div>
+            <h3 class="roboto font-bold text-2xl text-[#27AE60] uppercase mb-3">
+              Success
+            </h3>
+            <p class="roboto text-xl font-medium text-[#4A4A4A]">
+              Thank you for Booking Our Bus Seats. We are working hard to find
+              the best service and deals for you.
+            </p>
+            <p class="roboto text-xl font-light text-[#4A4A4A]">
+              Shortly you will find a confirmation in your email.
+            </p>
+            <div class="modal-action">
+              <form method="dialog" class="mx-auto">
+                <!-- if there is a button in form, it will close the modal -->
+                <button
+                  onclick="goHome()"
+                  class="btn roboto text-xl font-semibold text-white-color bg-[#27AE60] rounded-3xl mb-4 px-16 py-2"
+                >
+                  Continue
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </section>
 
       <!-- banner section -->
       <section>
@@ -694,7 +733,7 @@
                 </div>
                 <button
                   id="next-btn"
-                  onclick="showModal()"
+                  onclick="modal.showModal()"
                   disabled
                   class="btn w-full bg-green px-5 py-1 rounded-lg text-white"
                 >

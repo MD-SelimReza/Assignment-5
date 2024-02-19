@@ -3,22 +3,10 @@ let ticketCount = parseInt(document.getElementById('ticketCount').innerText);
 let totalSeat = parseInt(document.getElementById('totalSeat').innerText);
 
 const btnApply = document.getElementById('btn-apply');
-const phone = document.getElementById('phone');
-const nextBtn = document.getElementById('next-btn');
-
-phone.addEventListener('keyup', function (e) {
-    const phone = e.target.value.length;
-    if (phone >= 7 && phone <= 11 && ticketCount >= 1) {
-        nextBtn.removeAttribute('disabled');
-    } else {
-        nextBtn.setAttribute('disabled', true);
-    }
-})
-
-let count = 0;
 
 const seatBooked = [];
 const allSeat = document.querySelectorAll('.seatNo');
+
 for (const seat of allSeat) {
     seat.addEventListener('click', function (e) {
         const seatTitle = seat.innerText;
@@ -65,7 +53,6 @@ for (const seat of allSeat) {
             };
 
         };
-        // seatBooked.push(seatTitle);
     });
 };
 
@@ -101,16 +88,23 @@ btnApply.addEventListener('click', function () {
     }
 });
 
+const phone = document.getElementById('phone');
+const nextBtn = document.getElementById('next-btn');
 
-const name = document.getElementById('name');
-
-nextBtn.addEventListener('click', function () {
-
+phone.addEventListener('keyup', function (e) {
+    const phone = e.target.value.length;
+    if (phone >= 7 && phone <= 11 && ticketCount >= 1) {
+        nextBtn.removeAttribute('disabled');
+    } else {
+        nextBtn.setAttribute('disabled', true);
+    }
 })
-
 
 function setInnerText(displayId, value) {
     document.getElementById(displayId).innerText = value;
 }
 
+function goHome() {
+    location.reload();
+}
 
